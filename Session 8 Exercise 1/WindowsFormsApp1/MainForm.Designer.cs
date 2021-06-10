@@ -60,6 +60,7 @@ namespace WindowsFormsApp1 {
             this.button3.TabIndex = 7;
             this.button3.Text = "Add Course...";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.CourseFormload);
             // 
             // button4
             // 
@@ -69,7 +70,7 @@ namespace WindowsFormsApp1 {
             this.button4.TabIndex = 8;
             this.button4.Text = "Add Student...";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.StudentFormLoad);
             // 
             // button5
             // 
@@ -79,6 +80,7 @@ namespace WindowsFormsApp1 {
             this.button5.TabIndex = 9;
             this.button5.Text = "Add Professor...";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.ProfessorFormLoad);
             // 
             // MainForm
             // 

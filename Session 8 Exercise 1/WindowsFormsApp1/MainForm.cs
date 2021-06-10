@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Classes;
 
 namespace WindowsFormsApp1 {
 
@@ -34,7 +35,7 @@ namespace WindowsFormsApp1 {
 
         }
 
-        private void button4_Click(object sender, EventArgs e) {
+        private void StudentFormLoad(object sender, EventArgs e) {
 
             Student student = new Student();
             // TODO: 1. ΝΑ ΠΕΡΑΣΩ ΤΟ STUDENT ΟΒJECT ΣΤΗΝ ΦΟΡΜΑ!
@@ -51,6 +52,19 @@ namespace WindowsFormsApp1 {
 
         private void button2_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void CourseFormload(object sender, EventArgs e) {
+            Course course = new Course();
+
+            CourseForm form = new CourseForm();
+            form.ShowDialog();
+        }
+
+        private void ProfessorFormLoad(object sender, EventArgs e) {
+            Professor professor = new Professor();
+            ProfessorForm form = new ProfessorForm();
+            form.ShowDialog();
         }
     }
 }

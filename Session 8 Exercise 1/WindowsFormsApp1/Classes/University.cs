@@ -4,34 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1 {
-
-    public class Course {
-
-        // PROPERTIES
-        public string Subject { get; set; }
-        public int Hours { get; set; }
-        public CoursesCategoryEnum Category { get; set; }
-
-        // CONSTRUCTOR
-        public Course() {
-
-        }
-
-        // METHODS
-    }
-
-    public class Student {
-
-        public Guid ID { get; private set; }
+namespace WindowsFormsApp1.Classes {
 
 
-    }
+
+    //public class Student {
+
+    //    public Guid ID { get; private set; }
+
+
+    //}
 
     public class University {
 
         // PROPERTIES
-         public List<Schedule> ScheduledCourses { get; set; }
+        public List<Schedule> ScheduledCourses { get; set; }
 
         public Schedule ScheduledCourse { get; set; }
 
@@ -41,60 +28,7 @@ namespace WindowsFormsApp1 {
         }
 
         //  METHODS
-        public void Init() {
 
-            List<Course> courses = new List<Course>();
-
-            Course physics1 = new Course() {
-                Subject = "Quantum Physics",
-                Category = CoursesCategoryEnum.Physics,
-                Hours = 100
-            };
-            courses.Add(physics1);
-
-
-            Course physics2 = new Course() {
-                Subject = "Electo-Dynamics",
-                Category = CoursesCategoryEnum.Physics,
-                Hours = 50
-            };
-            courses.Add(physics2);
-
-            Course static1 = new Course();
-            static1.Subject = "Static";
-            static1.Category = CoursesCategoryEnum.CivilEngineering;
-            static1.Hours = 500;
-            
-            courses.Add(static1);
-
-
-            List<Course> physicsCourses = courses.FindAll(x => x.Category == CoursesCategoryEnum.Physics);
-
-
-            List<Course> physicsCourses100  = physicsCourses.FindAll(course => course.Hours >= 100);
-
-
-
-            List<Course> physicsCourses2 = new List<Course>(); 
-            foreach  (Course x in courses) {
-
-                if (x.Category == CoursesCategoryEnum.Physics && x.Hours >= 100) {
-                    physicsCourses2.Add(x);
-                }
-            }
-
-            List<Course> physicsCourses3 = new List<Course>();
-            foreach (Course y in courses) {
-
-                if (y.Hours >= 100) {
-                    physicsCourses3.Add(y);
-                }
-            }
-
-
-
-
-        }
 
         public void SetCourse() {
 
@@ -102,7 +36,7 @@ namespace WindowsFormsApp1 {
             //Courses physics1 = new Courses();
             //physics1.Category = CoursesCategoryEnum.Physics;
 
-           
+
 
 
         }
@@ -132,12 +66,12 @@ namespace WindowsFormsApp1 {
             }
 
 
-            if (coursesCategory == CoursesCategoryEnum.Physics) { 
-            
-            
+            if (coursesCategory == CoursesCategoryEnum.Physics) {
+
+
             }
 
-            
+
 
 
         }
@@ -161,7 +95,7 @@ namespace WindowsFormsApp1 {
                 Callendar = callendar,
                 CourseID = courseID,
                 ProfessorID = professorID
-               
+
             };
 
             ScheduledCourse = schedule;
@@ -173,7 +107,7 @@ namespace WindowsFormsApp1 {
 
             // locate
             Schedule schedule = ScheduledCourses.Find(x => x.ID == scheduleID);
-            
+
             UpdateScheduledCourse(scheduleID, Guid.Empty, Guid.Empty, callendar);
         }
 
@@ -187,7 +121,7 @@ namespace WindowsFormsApp1 {
                 schedule.CourseID = courseID;
                 // todo ....
             }
-            
+
 
             if (professorID != Guid.Empty) {
                 schedule.ProfessorID = professorID;
@@ -209,14 +143,14 @@ namespace WindowsFormsApp1 {
     }
 
 
-    public class Crud { 
-    
-    
-    
-    
+    public class Crud {
 
-        public void Create() { 
-        
+
+
+
+
+        public void Create() {
+
         }
 
         public void Read() {
@@ -234,34 +168,19 @@ namespace WindowsFormsApp1 {
 
 
 
-    public class Schedule  {
-
-        // PROPERTIES
-        public Guid ID { get; private set; }
-
-        public Guid CourseID { get; set; }
-        public Guid ProfessorID { get; set; }
-
-        public DateTime Callendar { get; set; }
-
-        // CONSTRUCTOR
-        public Schedule() {
-            ID = Guid.NewGuid();
-        }
-
-        private void Init() {
-
-            ID = Guid.NewGuid();
-        }
-
-    }
 
 
-    
-
-
-
-
-  
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
