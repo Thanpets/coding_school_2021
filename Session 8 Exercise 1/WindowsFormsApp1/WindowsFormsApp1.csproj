@@ -90,6 +90,12 @@
       <DependentUpon>StudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\University.cs" />
+    <EmbeddedResource Include="Forms\CourseForm.resx">
+      <DependentUpon>CourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProfessorForm.resx">
+      <DependentUpon>ProfessorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

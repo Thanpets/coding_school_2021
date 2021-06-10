@@ -37,6 +37,8 @@ namespace WindowsFormsApp1 {
             // todo: CANCEL EVERYTHING -- DO NOT MODIFY THE OBJECT!
         }
 
-    
+        private void textBox1_TextChanged(object sender, EventArgs e) {
+
+        }
     }
 }

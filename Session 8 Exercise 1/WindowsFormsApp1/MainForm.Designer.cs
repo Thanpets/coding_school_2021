@@ -26,9 +26,9 @@ namespace WindowsFormsApp1 {
         private void InitializeComponent() {
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.AddCoursesButton = new System.Windows.Forms.Button();
+            this.AddStudentButton = new System.Windows.Forms.Button();
+            this.AddProfessorButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -52,44 +52,44 @@ namespace WindowsFormsApp1 {
             this.label1.TabIndex = 6;
             this.label1.Text = "University Management Application";
             // 
-            // button3
+            // AddCoursesButton
             // 
-            this.button3.Location = new System.Drawing.Point(69, 70);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 117);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Add Course...";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.CourseFormload);
+            this.AddCoursesButton.Location = new System.Drawing.Point(69, 70);
+            this.AddCoursesButton.Name = "AddCoursesButton";
+            this.AddCoursesButton.Size = new System.Drawing.Size(109, 117);
+            this.AddCoursesButton.TabIndex = 7;
+            this.AddCoursesButton.Text = "Add Course...";
+            this.AddCoursesButton.UseVisualStyleBackColor = true;
+            this.AddCoursesButton.Click += new System.EventHandler(this.CourseFormload);
             // 
-            // button4
+            // AddStudentButton
             // 
-            this.button4.Location = new System.Drawing.Point(217, 70);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 117);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Add Student...";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.StudentFormLoad);
+            this.AddStudentButton.Location = new System.Drawing.Point(217, 70);
+            this.AddStudentButton.Name = "AddStudentButton";
+            this.AddStudentButton.Size = new System.Drawing.Size(109, 117);
+            this.AddStudentButton.TabIndex = 8;
+            this.AddStudentButton.Text = "Add Student...";
+            this.AddStudentButton.UseVisualStyleBackColor = true;
+            this.AddStudentButton.Click += new System.EventHandler(this.StudentFormLoad);
             // 
-            // button5
+            // AddProfessorButton
             // 
-            this.button5.Location = new System.Drawing.Point(363, 70);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 117);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Add Professor...";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.ProfessorFormLoad);
+            this.AddProfessorButton.Location = new System.Drawing.Point(363, 70);
+            this.AddProfessorButton.Name = "AddProfessorButton";
+            this.AddProfessorButton.Size = new System.Drawing.Size(109, 117);
+            this.AddProfessorButton.TabIndex = 9;
+            this.AddProfessorButton.Text = "Add Professor...";
+            this.AddProfessorButton.UseVisualStyleBackColor = true;
+            this.AddProfessorButton.Click += new System.EventHandler(this.ProfessorFormLoad);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.AddProfessorButton);
+            this.Controls.Add(this.AddStudentButton);
+            this.Controls.Add(this.AddCoursesButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Name = "MainForm";
@@ -103,9 +103,9 @@ namespace WindowsFormsApp1 {
         #endregion
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button AddCoursesButton;
+        private System.Windows.Forms.Button AddStudentButton;
+        private System.Windows.Forms.Button AddProfessorButton;
     }
 }
 
