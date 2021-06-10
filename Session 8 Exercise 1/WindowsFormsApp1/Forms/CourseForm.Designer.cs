@@ -75,7 +75,8 @@ namespace WindowsFormsApp1 {
             // 
             // courseCancelButton
             // 
-            this.courseCancelButton.Location = new System.Drawing.Point(603, 407);
+            this.courseCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.courseCancelButton.Location = new System.Drawing.Point(679, 406);
             this.courseCancelButton.Name = "courseCancelButton";
             this.courseCancelButton.Size = new System.Drawing.Size(109, 32);
             this.courseCancelButton.TabIndex = 23;
@@ -85,7 +86,8 @@ namespace WindowsFormsApp1 {
             // 
             // courseCreateButton
             // 
-            this.courseCreateButton.Location = new System.Drawing.Point(488, 407);
+            this.courseCreateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.courseCreateButton.Location = new System.Drawing.Point(564, 406);
             this.courseCreateButton.Name = "courseCreateButton";
             this.courseCreateButton.Size = new System.Drawing.Size(109, 32);
             this.courseCreateButton.TabIndex = 22;

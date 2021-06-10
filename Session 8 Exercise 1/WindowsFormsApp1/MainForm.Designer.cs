@@ -24,22 +24,12 @@ namespace WindowsFormsApp1 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AddCoursesButton = new System.Windows.Forms.Button();
             this.AddStudentButton = new System.Windows.Forms.Button();
             this.AddProfessorButton = new System.Windows.Forms.Button();
+            this.ExitApplicationbutton = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(645, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -82,16 +72,26 @@ namespace WindowsFormsApp1 {
             this.AddProfessorButton.UseVisualStyleBackColor = true;
             this.AddProfessorButton.Click += new System.EventHandler(this.ProfessorFormLoad);
             // 
+            // ExitApplicationbutton
+            // 
+            this.ExitApplicationbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitApplicationbutton.Location = new System.Drawing.Point(676, 439);
+            this.ExitApplicationbutton.Name = "ExitApplicationbutton";
+            this.ExitApplicationbutton.Size = new System.Drawing.Size(112, 51);
+            this.ExitApplicationbutton.TabIndex = 10;
+            this.ExitApplicationbutton.Text = "Exit";
+            this.ExitApplicationbutton.Click += new System.EventHandler(this.ExitApplicationButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
+            this.Controls.Add(this.ExitApplicationbutton);
             this.Controls.Add(this.AddProfessorButton);
             this.Controls.Add(this.AddStudentButton);
             this.Controls.Add(this.AddCoursesButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -101,11 +101,11 @@ namespace WindowsFormsApp1 {
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AddCoursesButton;
         private System.Windows.Forms.Button AddStudentButton;
         private System.Windows.Forms.Button AddProfessorButton;
+        private DevExpress.XtraEditors.SimpleButton ExitApplicationbutton;
     }
 }
 

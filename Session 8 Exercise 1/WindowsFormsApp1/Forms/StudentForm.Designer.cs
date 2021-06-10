@@ -26,7 +26,6 @@ namespace WindowsFormsApp1 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.studentCancelButton = new System.Windows.Forms.Button();
             this.studentCreateButton = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -35,30 +34,22 @@ namespace WindowsFormsApp1 {
             this.studentNameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.studentRegNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.studentAgeSpinEdit = new DevExpress.XtraEditors.SpinEdit();
+            this.CancelStudentButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.studentNameTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentRegNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentAgeSpinEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // studentCancelButton
-            // 
-            this.studentCancelButton.Location = new System.Drawing.Point(591, 407);
-            this.studentCancelButton.Name = "studentCancelButton";
-            this.studentCancelButton.Size = new System.Drawing.Size(109, 32);
-            this.studentCancelButton.TabIndex = 4;
-            this.studentCancelButton.Text = "Cancel";
-            this.studentCancelButton.UseVisualStyleBackColor = true;
-            this.studentCancelButton.Click += new System.EventHandler(this.button2_Click);
-            // 
             // studentCreateButton
             // 
+            this.studentCreateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.studentCreateButton.Location = new System.Drawing.Point(476, 407);
             this.studentCreateButton.Name = "studentCreateButton";
             this.studentCreateButton.Size = new System.Drawing.Size(109, 32);
             this.studentCreateButton.TabIndex = 3;
             this.studentCreateButton.Text = "Create";
             this.studentCreateButton.UseVisualStyleBackColor = true;
-            this.studentCreateButton.Click += new System.EventHandler(this.createStudentButton);
+            this.studentCreateButton.Click += new System.EventHandler(this.CreateStudentButton);
             // 
             // labelControl1
             // 
@@ -120,11 +111,23 @@ namespace WindowsFormsApp1 {
             this.studentAgeSpinEdit.Size = new System.Drawing.Size(100, 20);
             this.studentAgeSpinEdit.TabIndex = 12;
             // 
+            // CancelStudentButton
+            // 
+            this.CancelStudentButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CancelStudentButton.Location = new System.Drawing.Point(591, 407);
+            this.CancelStudentButton.Name = "CancelStudentButton";
+            this.CancelStudentButton.Size = new System.Drawing.Size(109, 32);
+            this.CancelStudentButton.TabIndex = 13;
+            this.CancelStudentButton.Text = "Cancel";
+            this.CancelStudentButton.UseVisualStyleBackColor = true;
+            this.CancelStudentButton.Click += new System.EventHandler(this.CancelStudentButton_Click);
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 451);
+            this.Controls.Add(this.CancelStudentButton);
             this.Controls.Add(this.studentAgeSpinEdit);
             this.Controls.Add(this.studentRegNumberTextEdit);
             this.Controls.Add(this.studentNameTextEdit);
@@ -132,7 +135,6 @@ namespace WindowsFormsApp1 {
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.studentCancelButton);
             this.Controls.Add(this.studentCreateButton);
             this.Name = "StudentForm";
             this.Text = "StudentForm";
@@ -148,8 +150,6 @@ namespace WindowsFormsApp1 {
         
 
         #endregion
-
-        private System.Windows.Forms.Button studentCancelButton;
         private System.Windows.Forms.Button studentCreateButton;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -158,5 +158,6 @@ namespace WindowsFormsApp1 {
         private DevExpress.XtraEditors.TextEdit studentNameTextEdit;
         private DevExpress.XtraEditors.TextEdit studentRegNumberTextEdit;
         private DevExpress.XtraEditors.SpinEdit studentAgeSpinEdit;
+        private System.Windows.Forms.Button CancelStudentButton;
     }
 }

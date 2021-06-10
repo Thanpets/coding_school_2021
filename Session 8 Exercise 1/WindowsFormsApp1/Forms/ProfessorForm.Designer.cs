@@ -78,23 +78,25 @@ namespace WindowsFormsApp1 {
             // 
             // professorCancelButton
             // 
-            this.professorCancelButton.Location = new System.Drawing.Point(676, 406);
+            this.professorCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.professorCancelButton.Location = new System.Drawing.Point(661, 388);
             this.professorCancelButton.Name = "professorCancelButton";
             this.professorCancelButton.Size = new System.Drawing.Size(109, 32);
             this.professorCancelButton.TabIndex = 14;
             this.professorCancelButton.Text = "Cancel";
             this.professorCancelButton.UseVisualStyleBackColor = true;
-            this.professorCancelButton.Click += new System.EventHandler(this.professorCancelButton_Click);
+            this.professorCancelButton.Click += new System.EventHandler(this.ProfessorCancelButton_Click);
             // 
             // professorCreateButton
             // 
-            this.professorCreateButton.Location = new System.Drawing.Point(561, 406);
+            this.professorCreateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.professorCreateButton.Location = new System.Drawing.Point(546, 388);
             this.professorCreateButton.Name = "professorCreateButton";
             this.professorCreateButton.Size = new System.Drawing.Size(109, 32);
             this.professorCreateButton.TabIndex = 13;
             this.professorCreateButton.Text = "Create";
             this.professorCreateButton.UseVisualStyleBackColor = true;
-            this.professorCreateButton.Click += new System.EventHandler(this.professorCreateButton_Click);
+            this.professorCreateButton.Click += new System.EventHandler(this.ProfessorCreateButton_Click);
             // 
             // labelControl3
             // 
@@ -122,7 +124,7 @@ namespace WindowsFormsApp1 {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 444);
+            this.ClientSize = new System.Drawing.Size(775, 426);
             this.Controls.Add(this.professorAgeSpinEdit);
             this.Controls.Add(this.professorRankTextEdit);
             this.Controls.Add(this.professorNameTextEdit);

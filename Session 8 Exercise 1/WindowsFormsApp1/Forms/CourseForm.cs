@@ -11,14 +11,14 @@ using WindowsFormsApp1.Classes;
 
 namespace WindowsFormsApp1 {
     public partial class CourseForm : Form {
-        public Course course { get; set; }
+        public Course Course { get; set; }
         public CourseForm() {
             InitializeComponent();
         }
 
         private void courseCreateButton_Click(object sender, EventArgs e) {
-            course.Subject = courseSubjectTextEdit.Text;
-            course.Code = courseCodeTextEdit.Text;
+            Course.Subject = courseSubjectTextEdit.Text;
+            Course.Code = courseCodeTextEdit.Text;
             this.Close();
         }
 

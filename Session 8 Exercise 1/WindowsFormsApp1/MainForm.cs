@@ -40,7 +40,7 @@ namespace WindowsFormsApp1 {
             Student student = new Student();
             // TODO: 1. ΝΑ ΠΕΡΑΣΩ ΤΟ STUDENT ΟΒJECT ΣΤΗΝ ΦΟΡΜΑ!
             StudentForm studentForm = new StudentForm();
-            studentForm.student = student;
+            studentForm.Student = student;
             // TODO: OPEN FORM ...
 
             studentForm.ShowDialog();
@@ -53,15 +53,13 @@ namespace WindowsFormsApp1 {
             
         }
 
-        private void button2_Click(object sender, EventArgs e) {
-            Application.Exit();
-        }
+       
 
         private void CourseFormload(object sender, EventArgs e) {
             Course course = new Course();
 
             CourseForm courseForm = new CourseForm();
-            courseForm.course = course;
+            courseForm.Course = course;
             courseForm.ShowDialog();
 
             courses.Add(course);
@@ -70,13 +68,17 @@ namespace WindowsFormsApp1 {
         private void ProfessorFormLoad(object sender, EventArgs e) {
             Professor professor = new Professor();
             ProfessorForm professorForm = new ProfessorForm();
-            professorForm.professor = professor;
+            professorForm.Professor = professor;
 
             professorForm.ShowDialog();
 
             professors.Add(professor);
 
             
+        }
+
+        private void ExitApplicationButton_Click(object sender, EventArgs e) {
+            Application.Exit();
         }
     }
 }
