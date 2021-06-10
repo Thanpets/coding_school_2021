@@ -14,6 +14,8 @@ namespace WindowsFormsApp1 {
     public partial class MainForm : Form {
 
         List<Student> Students = new List<Student>();
+        List<Professor> professors = new List<Professor>();
+        List<Course> courses = new List<Course>();
 
 
         public MainForm() {
@@ -64,8 +66,14 @@ namespace WindowsFormsApp1 {
 
         private void ProfessorFormLoad(object sender, EventArgs e) {
             Professor professor = new Professor();
-            ProfessorForm form = new ProfessorForm();
-            form.ShowDialog();
+            ProfessorForm professorForm = new ProfessorForm();
+            professorForm.professor = professor;
+
+            professorForm.ShowDialog();
+
+            professors.Add(professor);
+
+            
         }
     }
 }

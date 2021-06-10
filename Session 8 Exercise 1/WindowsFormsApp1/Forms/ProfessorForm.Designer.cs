@@ -84,6 +84,7 @@ namespace WindowsFormsApp1 {
             this.professorCancelButton.TabIndex = 14;
             this.professorCancelButton.Text = "Cancel";
             this.professorCancelButton.UseVisualStyleBackColor = true;
+            this.professorCancelButton.Click += new System.EventHandler(this.professorCancelButton_Click);
             // 
             // professorCreateButton
             // 
@@ -93,6 +94,7 @@ namespace WindowsFormsApp1 {
             this.professorCreateButton.TabIndex = 13;
             this.professorCreateButton.Text = "Create";
             this.professorCreateButton.UseVisualStyleBackColor = true;
+            this.professorCreateButton.Click += new System.EventHandler(this.professorCreateButton_Click);
             // 
             // labelControl3
             // 
@@ -132,6 +134,7 @@ namespace WindowsFormsApp1 {
             this.Controls.Add(this.professorCreateButton);
             this.Name = "ProfessorForm";
             this.Text = "ProfessorForm";
+            this.Load += new System.EventHandler(this.ProfessorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.professorRankTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorNameTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorAgeSpinEdit.Properties)).EndInit();
