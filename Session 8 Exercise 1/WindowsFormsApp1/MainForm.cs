@@ -31,23 +31,23 @@ namespace WindowsFormsApp1 {
             //checkBox1.Checked = true;
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-
-        }
+        
 
         private void StudentFormLoad(object sender, EventArgs e) {
 
             Student student = new Student();
             // TODO: 1. ΝΑ ΠΕΡΑΣΩ ΤΟ STUDENT ΟΒJECT ΣΤΗΝ ΦΟΡΜΑ!
-
+            StudentForm studentForm = new StudentForm();
+            studentForm.student = student;
             // TODO: OPEN FORM ...
+
+            studentForm.ShowDialog();
             
-            StudentForm form = new StudentForm();
-            form.ShowDialog();
 
 
             //TODO: WHEN FORM THE CLOSES ADD THE STUDENT TO A STUDENT LIST
             Students.Add(student);
+            
             
         }
 

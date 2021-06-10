@@ -56,7 +56,7 @@ namespace WindowsFormsApp1 {
             this.studentCreateButton.TabIndex = 3;
             this.studentCreateButton.Text = "Create";
             this.studentCreateButton.UseVisualStyleBackColor = true;
-            this.studentCreateButton.Click += new System.EventHandler(this.button1_Click);
+            this.studentCreateButton.Click += new System.EventHandler(this.CreateStudentButton);
             // 
             // labelControl1
             // 

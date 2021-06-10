@@ -24,33 +24,19 @@ namespace WindowsFormsApp1 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.professorAgeSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.professorRankTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.professorNameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.professorCancelButton = new System.Windows.Forms.Button();
             this.professorCreateButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.professorAgeSpinEdit.Properties)).BeginInit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.professorAgeSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             ((System.ComponentModel.ISupportInitialize)(this.professorRankTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorNameTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professorAgeSpinEdit.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // professorAgeSpinEdit
-            // 
-            this.professorAgeSpinEdit.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.professorAgeSpinEdit.Location = new System.Drawing.Point(55, 94);
-            this.professorAgeSpinEdit.Name = "professorAgeSpinEdit";
-            this.professorAgeSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.professorAgeSpinEdit.Size = new System.Drawing.Size(100, 20);
-            this.professorAgeSpinEdit.TabIndex = 21;
             // 
             // professorRankTextEdit
             // 
@@ -73,14 +59,6 @@ namespace WindowsFormsApp1 {
             this.labelControl4.Size = new System.Drawing.Size(28, 13);
             this.labelControl4.TabIndex = 18;
             this.labelControl4.Text = "Rank:";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(18, 97);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(23, 13);
-            this.labelControl3.TabIndex = 17;
-            this.labelControl3.Text = "Age:";
             // 
             // labelControl2
             // 
@@ -116,6 +94,28 @@ namespace WindowsFormsApp1 {
             this.professorCreateButton.Text = "Create";
             this.professorCreateButton.UseVisualStyleBackColor = true;
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(18, 97);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(23, 13);
+            this.labelControl3.TabIndex = 17;
+            this.labelControl3.Text = "Age:";
+            // 
+            // professorAgeSpinEdit
+            // 
+            this.professorAgeSpinEdit.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.professorAgeSpinEdit.Location = new System.Drawing.Point(55, 94);
+            this.professorAgeSpinEdit.Name = "professorAgeSpinEdit";
+            this.professorAgeSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.professorAgeSpinEdit.Size = new System.Drawing.Size(100, 20);
+            this.professorAgeSpinEdit.TabIndex = 21;
+            // 
             // ProfessorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,24 +132,23 @@ namespace WindowsFormsApp1 {
             this.Controls.Add(this.professorCreateButton);
             this.Name = "ProfessorForm";
             this.Text = "ProfessorForm";
-            ((System.ComponentModel.ISupportInitialize)(this.professorAgeSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorRankTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorNameTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professorAgeSpinEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.SpinEdit professorAgeSpinEdit;
         private DevExpress.XtraEditors.TextEdit professorRankTextEdit;
         private DevExpress.XtraEditors.TextEdit professorNameTextEdit;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.Button professorCancelButton;
         private System.Windows.Forms.Button professorCreateButton;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.SpinEdit professorAgeSpinEdit;
     }
 }
