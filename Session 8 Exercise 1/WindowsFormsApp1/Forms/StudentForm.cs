@@ -25,10 +25,10 @@ namespace WindowsFormsApp1 {
 
         // METHODS
         private void StudentForm_Load(object sender, EventArgs e) {
-
+            
         }
 
-        private void CreateStudentButton(object sender, EventArgs e) {
+        private void createStudentButton(object sender, EventArgs e) {
 
             // todo: MODIFY THE OBJECT STUDENT -- CLOSE THE FORM!
             student.Name = studentNameTextEdit.Text;

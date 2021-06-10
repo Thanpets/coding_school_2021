@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace WindowsFormsApp1 {
     partial class StudentForm {
         /// <summary>
@@ -56,7 +58,7 @@ namespace WindowsFormsApp1 {
             this.studentCreateButton.TabIndex = 3;
             this.studentCreateButton.Text = "Create";
             this.studentCreateButton.UseVisualStyleBackColor = true;
-            this.studentCreateButton.Click += new System.EventHandler(this.CreateStudentButton);
+            this.studentCreateButton.Click += new System.EventHandler(this.createStudentButton);
             // 
             // labelControl1
             // 
@@ -142,6 +144,8 @@ namespace WindowsFormsApp1 {
             this.PerformLayout();
 
         }
+
+        
 
         #endregion
 

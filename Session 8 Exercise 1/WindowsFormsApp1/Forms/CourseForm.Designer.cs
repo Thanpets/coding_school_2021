@@ -29,8 +29,8 @@ namespace WindowsFormsApp1 {
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.professorCancelButton = new System.Windows.Forms.Button();
-            this.professorCreateButton = new System.Windows.Forms.Button();
+            this.courseCancelButton = new System.Windows.Forms.Button();
+            this.courseCreateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.courseSubjectTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseCodeTextEdit.Properties)).BeginInit();
             this.SuspendLayout();
@@ -73,23 +73,25 @@ namespace WindowsFormsApp1 {
             this.labelControl1.TabIndex = 24;
             this.labelControl1.Text = "Credentials of new Course";
             // 
-            // professorCancelButton
+            // courseCancelButton
             // 
-            this.professorCancelButton.Location = new System.Drawing.Point(603, 407);
-            this.professorCancelButton.Name = "professorCancelButton";
-            this.professorCancelButton.Size = new System.Drawing.Size(109, 32);
-            this.professorCancelButton.TabIndex = 23;
-            this.professorCancelButton.Text = "Cancel";
-            this.professorCancelButton.UseVisualStyleBackColor = true;
+            this.courseCancelButton.Location = new System.Drawing.Point(603, 407);
+            this.courseCancelButton.Name = "courseCancelButton";
+            this.courseCancelButton.Size = new System.Drawing.Size(109, 32);
+            this.courseCancelButton.TabIndex = 23;
+            this.courseCancelButton.Text = "Cancel";
+            this.courseCancelButton.UseVisualStyleBackColor = true;
+            this.courseCancelButton.Click += new System.EventHandler(this.courseCancelButton_Click);
             // 
-            // professorCreateButton
+            // courseCreateButton
             // 
-            this.professorCreateButton.Location = new System.Drawing.Point(488, 407);
-            this.professorCreateButton.Name = "professorCreateButton";
-            this.professorCreateButton.Size = new System.Drawing.Size(109, 32);
-            this.professorCreateButton.TabIndex = 22;
-            this.professorCreateButton.Text = "Create";
-            this.professorCreateButton.UseVisualStyleBackColor = true;
+            this.courseCreateButton.Location = new System.Drawing.Point(488, 407);
+            this.courseCreateButton.Name = "courseCreateButton";
+            this.courseCreateButton.Size = new System.Drawing.Size(109, 32);
+            this.courseCreateButton.TabIndex = 22;
+            this.courseCreateButton.Text = "Create";
+            this.courseCreateButton.UseVisualStyleBackColor = true;
+            this.courseCreateButton.Click += new System.EventHandler(this.courseCreateButton_Click);
             // 
             // CourseForm
             // 
@@ -101,8 +103,8 @@ namespace WindowsFormsApp1 {
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.professorCancelButton);
-            this.Controls.Add(this.professorCreateButton);
+            this.Controls.Add(this.courseCancelButton);
+            this.Controls.Add(this.courseCreateButton);
             this.Name = "CourseForm";
             this.Text = "CourseForm";
             ((System.ComponentModel.ISupportInitialize)(this.courseSubjectTextEdit.Properties)).EndInit();
@@ -118,7 +120,7 @@ namespace WindowsFormsApp1 {
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.Button professorCancelButton;
-        private System.Windows.Forms.Button professorCreateButton;
+        private System.Windows.Forms.Button courseCancelButton;
+        private System.Windows.Forms.Button courseCreateButton;
     }
 }

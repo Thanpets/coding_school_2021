@@ -60,8 +60,11 @@ namespace WindowsFormsApp1 {
         private void CourseFormload(object sender, EventArgs e) {
             Course course = new Course();
 
-            CourseForm form = new CourseForm();
-            form.ShowDialog();
+            CourseForm courseForm = new CourseForm();
+            courseForm.course = course;
+            courseForm.ShowDialog();
+
+            courses.Add(course);
         }
 
         private void ProfessorFormLoad(object sender, EventArgs e) {
