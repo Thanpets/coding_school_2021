@@ -82,7 +82,7 @@ namespace WindowsFormsApp1 {
             this.courseCancelButton.TabIndex = 23;
             this.courseCancelButton.Text = "Cancel";
             this.courseCancelButton.UseVisualStyleBackColor = true;
-            this.courseCancelButton.Click += new System.EventHandler(this.courseCancelButton_Click);
+            this.courseCancelButton.Click += new System.EventHandler(this.CourseCancelButton_Click);
             // 
             // courseCreateButton
             // 
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1 {
             this.courseCreateButton.TabIndex = 22;
             this.courseCreateButton.Text = "Create";
             this.courseCreateButton.UseVisualStyleBackColor = true;
-            this.courseCreateButton.Click += new System.EventHandler(this.courseCreateButton_Click);
+            this.courseCreateButton.Click += new System.EventHandler(this.CourseCreateButton_Click);
             // 
             // CourseForm
             // 

@@ -16,13 +16,13 @@ namespace WindowsFormsApp1 {
             InitializeComponent();
         }
 
-        private void courseCreateButton_Click(object sender, EventArgs e) {
+        private void CourseCreateButton_Click(object sender, EventArgs e) {
             Course.Subject = courseSubjectTextEdit.Text;
             Course.Code = courseCodeTextEdit.Text;
             this.Close();
         }
 
-        private void courseCancelButton_Click(object sender, EventArgs e) {
+        private void CourseCancelButton_Click(object sender, EventArgs e) {
             this.Close();
         }
     }
