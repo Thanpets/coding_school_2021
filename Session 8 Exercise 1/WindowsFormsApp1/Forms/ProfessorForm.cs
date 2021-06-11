@@ -11,7 +11,7 @@ using WindowsFormsApp1.Classes;
 
 namespace WindowsFormsApp1 {
     public partial class ProfessorForm : Form {
-        public Professor Professor { get; set; }
+        public Professor NewProfessor { get; set; }
         public ProfessorForm() {
             InitializeComponent();
         }
@@ -21,9 +21,9 @@ namespace WindowsFormsApp1 {
         }
 
         private void ProfessorCreateButton_Click(object sender, EventArgs e) {
-            Professor.Name = professorNameTextEdit.Text;
-            Professor.Age = Convert.ToInt32(professorAgeSpinEdit.Value);
-            Professor.Rank = professorRankTextEdit.Text;
+            NewProfessor.Name = professorNameTextEdit.Text;
+            NewProfessor.Age = Convert.ToInt32(professorAgeSpinEdit.Value);
+            NewProfessor.Rank = professorRankTextEdit.Text;
             this.Close();
         }
 

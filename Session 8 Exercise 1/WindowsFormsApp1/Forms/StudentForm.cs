@@ -14,7 +14,7 @@ namespace WindowsFormsApp1 {
     public partial class StudentForm : Form {
 
         // PROPERTIES ????
-        public Student Student { get; set; }
+        public Student NewStudent { get; set; }
 
 
         // CONSTRUCTOR
@@ -31,9 +31,9 @@ namespace WindowsFormsApp1 {
         private void CreateStudentButton(object sender, EventArgs e) {
 
             // todo: MODIFY THE OBJECT STUDENT -- CLOSE THE FORM!
-            Student.Name = studentNameTextEdit.Text;
-            Student.Age = Convert.ToInt32(studentAgeSpinEdit.Value);
-            Student.RegistrationNumber = Convert.ToInt32(studentRegNumberTextEdit.Text);
+            NewStudent.Name = studentNameTextEdit.Text;
+            NewStudent.Age = Convert.ToInt32(studentAgeSpinEdit.Value);
+            NewStudent.RegistrationNumber = Convert.ToInt32(studentRegNumberTextEdit.Text);
             this.Close();
             
         }

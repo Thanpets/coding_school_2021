@@ -40,7 +40,7 @@ namespace WindowsFormsApp1 {
             Student student = new Student();
             // TODO: 1. ΝΑ ΠΕΡΑΣΩ ΤΟ STUDENT ΟΒJECT ΣΤΗΝ ΦΟΡΜΑ!
             StudentForm studentForm = new StudentForm();
-            studentForm.Student = student;
+            studentForm.NewStudent = student;
             // TODO: OPEN FORM ...
 
             studentForm.ShowDialog();
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1 {
             Course course = new Course();
 
             CourseForm courseForm = new CourseForm();
-            courseForm.Course = course;
+            courseForm.NewCourse = course;
             courseForm.ShowDialog();
 
             Courses.Add(course);
@@ -68,7 +68,7 @@ namespace WindowsFormsApp1 {
         private void ProfessorFormLoad(object sender, EventArgs e) {
             Professor professor = new Professor();
             ProfessorForm professorForm = new ProfessorForm();
-            professorForm.Professor = professor;
+            professorForm.NewProfessor = professor;
 
             professorForm.ShowDialog();
 
