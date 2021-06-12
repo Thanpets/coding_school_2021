@@ -34,7 +34,11 @@ namespace WindowsFormsApp1 {
             this.button1 = new System.Windows.Forms.Button();
             this.ctrlSerialize = new System.Windows.Forms.Button();
             this.ctrlDeserialize = new System.Windows.Forms.Button();
+            this.crtlProfessorList = new DevExpress.XtraEditors.ListBoxControl();
+            this.crtlCourseList = new DevExpress.XtraEditors.ListBoxControl();
             ((System.ComponentModel.ISupportInitialize)(this.ctrlStudentList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crtlProfessorList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crtlCourseList)).BeginInit();
             this.SuspendLayout();
             // 
             // ctrlExit
@@ -60,16 +64,17 @@ namespace WindowsFormsApp1 {
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(69, 70);
+            this.button3.Location = new System.Drawing.Point(370, 70);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 89);
             this.button3.TabIndex = 7;
             this.button3.Text = "Add Course...";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ctrlAddStudent
             // 
-            this.ctrlAddStudent.Location = new System.Drawing.Point(217, 70);
+            this.ctrlAddStudent.Location = new System.Drawing.Point(46, 70);
             this.ctrlAddStudent.Name = "ctrlAddStudent";
             this.ctrlAddStudent.Size = new System.Drawing.Size(113, 89);
             this.ctrlAddStudent.TabIndex = 8;
@@ -79,18 +84,19 @@ namespace WindowsFormsApp1 {
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(363, 70);
+            this.button5.Location = new System.Drawing.Point(210, 70);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 89);
             this.button5.TabIndex = 9;
             this.button5.Text = "Add Professor...";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // ctrlStudentList
             // 
-            this.ctrlStudentList.Location = new System.Drawing.Point(69, 226);
+            this.ctrlStudentList.Location = new System.Drawing.Point(22, 165);
             this.ctrlStudentList.Name = "ctrlStudentList";
-            this.ctrlStudentList.Size = new System.Drawing.Size(362, 148);
+            this.ctrlStudentList.Size = new System.Drawing.Size(160, 166);
             this.ctrlStudentList.TabIndex = 10;
             // 
             // ctrlSave
@@ -133,11 +139,27 @@ namespace WindowsFormsApp1 {
             this.ctrlDeserialize.UseVisualStyleBackColor = true;
             this.ctrlDeserialize.Click += new System.EventHandler(this.ctrlDeserialize_Click);
             // 
+            // crtlProfessorList
+            // 
+            this.crtlProfessorList.Location = new System.Drawing.Point(188, 165);
+            this.crtlProfessorList.Name = "crtlProfessorList";
+            this.crtlProfessorList.Size = new System.Drawing.Size(160, 166);
+            this.crtlProfessorList.TabIndex = 15;
+            // 
+            // crtlCourseList
+            // 
+            this.crtlCourseList.Location = new System.Drawing.Point(354, 165);
+            this.crtlCourseList.Name = "crtlCourseList";
+            this.crtlCourseList.Size = new System.Drawing.Size(160, 166);
+            this.crtlCourseList.TabIndex = 16;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
+            this.Controls.Add(this.crtlCourseList);
+            this.Controls.Add(this.crtlProfessorList);
             this.Controls.Add(this.ctrlDeserialize);
             this.Controls.Add(this.ctrlSerialize);
             this.Controls.Add(this.button1);
@@ -152,6 +174,8 @@ namespace WindowsFormsApp1 {
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ctrlStudentList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crtlProfessorList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crtlCourseList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +192,8 @@ namespace WindowsFormsApp1 {
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button ctrlSerialize;
         private System.Windows.Forms.Button ctrlDeserialize;
+        private DevExpress.XtraEditors.ListBoxControl crtlProfessorList;
+        private DevExpress.XtraEditors.ListBoxControl crtlCourseList;
     }
 }
 

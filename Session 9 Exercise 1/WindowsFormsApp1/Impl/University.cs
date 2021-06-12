@@ -23,6 +23,11 @@ namespace WindowsFormsApp1.Impl {
 
         // CONSTRUCTOR
         public University() {
+            Students = new List<Student>();
+            Professors = new List<Professor>();
+            Courses = new List<Course>();
+            //Grades = new List<Grade>();
+            //ScheduledCourses = new List<Schedule>();
 
         }
 

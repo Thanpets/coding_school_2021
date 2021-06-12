@@ -16,9 +16,11 @@ namespace WindowsFormsApp1 {
 
         // PROPERTIES ????
         public Student NewStudent { get; set; }
+        
 
         // CONSTRUCTOR
         public StudentForm() {
+            
             InitializeComponent();
         }
 
@@ -35,8 +37,12 @@ namespace WindowsFormsApp1 {
 
                 // 1. MODIFY THE OBJECT STUDENT
                 NewStudent.Name = Convert.ToString(ctrlName.EditValue);
+                NewStudent.Age = Convert.ToInt32(crtlAge.EditValue); 
+                
 
                 NewStudent.Surname = Convert.ToString(ctrlSurname.EditValue);
+                NewStudent.RegistrationNumber = Convert.ToInt32(crtlRegNumber.EditValue);
+                
 
                 // 2. CLOSE THE FORM!
 

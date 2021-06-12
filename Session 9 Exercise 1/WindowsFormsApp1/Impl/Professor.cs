@@ -11,6 +11,10 @@ namespace WindowsFormsApp1.Impl {
         public string Rank { get; set; }
         public List<Course> Courses { get; set; }
 
+        public Professor() {
+            
+        }
+
         
     }
 }
