@@ -150,7 +150,7 @@ namespace WindowsFormsApp1 {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
 
             // TODO: SERIALIZE UNIVERSITY OBJECT INSTEAD OF STUDENTS!
-            string data = serializer.Serialize(CodingSchool.Students);
+            string data = serializer.Serialize(CodingSchool);
 
             string path = Path.Combine(Environment.CurrentDirectory, _JsonFile);
             File.WriteAllText(path, data);
@@ -165,7 +165,7 @@ namespace WindowsFormsApp1 {
             string path = Path.Combine(Environment.CurrentDirectory, _JsonFile);
             string data = File.ReadAllText(path);
 
-            CodingSchool.Students = serializer.Deserialize<List<Student>>(data);
+            CodingSchool = serializer.Deserialize<University>(data);
 
 
             //Course physics = new Course() {
