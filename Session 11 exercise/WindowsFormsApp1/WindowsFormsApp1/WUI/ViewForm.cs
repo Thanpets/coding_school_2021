@@ -126,13 +126,13 @@ namespace WindowsFormsApp1.WUI {
             switch (Type) {
                 case EntityTypeEnum.Course: {
                         foreach (Course item in MasterData.Courses) {
-                            ctrlViewList.Items.Add($"{item.ID}\t{item.Code}\t{item.Subject}");
+                            ctrlViewList.Items.Add($"ID={item.ID} \t Code={item.Code} \t Subject={item.Subject}");
                         }
                         break;
                     }
                 case EntityTypeEnum.Student: {
                         foreach (Student item in MasterData.Students) {
-                            ctrlViewList.Items.Add($"{item.ID}\t{item.Name}\t{item.Surname}\t {item.Age}\t {item.RegistrationNumber}");
+                            ctrlViewList.Items.Add($"ID={item.ID} \t Name={item.Name} \t Surname={item.Surname} \t RegistrationNumber={item.RegistrationNumber} ");
                         }
                         break;
                     }
