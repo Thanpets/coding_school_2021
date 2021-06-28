@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Session18App
 {
-    public partial class Form1 : Form
+    public partial class CourseForm : Form
     {
-        public Form1()
+        public CourseForm()
         {
             InitializeComponent();
         }
-
     }
 }

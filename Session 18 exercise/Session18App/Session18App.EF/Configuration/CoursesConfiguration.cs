@@ -16,8 +16,8 @@ namespace Session18App.EF.Configuration
             builder.HasKey(course => course.Id);
             builder.Property(course => course.Id).ValueGeneratedOnAdd();
 
-            builder.Property(course => course.Title).HasMaxLength(100).IsRequired(true);
-            builder.Property(course => course.Category).HasMaxLength(100).IsRequired(true);
+            builder.Property(course => course.Title).HasMaxLength(150).IsRequired(true);
+            builder.Property(course => course.Category).HasMaxLength(200).IsRequired(true);
             
         }
     }
