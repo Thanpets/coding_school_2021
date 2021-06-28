@@ -1,5 +1,5 @@
 ﻿
-namespace Session_18
+namespace Session18App
 {
     partial class Form1
     {
