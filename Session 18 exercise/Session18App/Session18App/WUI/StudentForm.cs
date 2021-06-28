@@ -72,9 +72,9 @@ namespace Session18App
         {
             bindingSource1.Clear();
             _session18Context.ChangeTracker.Clear();
-            foreach (var todo in _session18Context.Students.ToList())
+            foreach (var student in _session18Context.Students.ToList())
             {
-                bindingSource1.Add(todo);
+                bindingSource1.Add(student);
             }
         }
 
@@ -83,7 +83,7 @@ namespace Session18App
             var newStudent = new Student();
             newStudent.Name = textBox1.Text;
             newStudent.Surname = textBox2.Text;
-            //newStudent.Birthdate = DateTime.TryParse(textBox3.Text);
+            //newStudent.Birthdate = Convert.ToString(textBox3.Text);
             newStudent.Adress = textBox4.Text;
 
             bindingSource1.Insert(0, newStudent);
