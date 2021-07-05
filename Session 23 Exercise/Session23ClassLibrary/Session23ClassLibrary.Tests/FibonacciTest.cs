@@ -7,8 +7,8 @@ namespace Session23ClassLibrary.Tests
     {
         private Fibonacci CreateDefaultSUT()
         {
-            var sut = new Fibonacci();
-            return sut;
+            var fib = new Fibonacci();
+            return fib;
         }
 
         //[Fact]
