@@ -10,7 +10,7 @@ namespace Session18App.Model
     {
         public string Title { get; set; }
         public string Category { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = new DateTime(1990, 1, 1);
         public int Duration { get; set; }
 
     }
