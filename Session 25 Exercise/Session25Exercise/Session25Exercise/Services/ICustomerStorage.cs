@@ -35,10 +35,7 @@ namespace Session25Exercise.Services
             selectedItem.Surname = customerItem.Surname;
             selectedItem.AFM = customerItem.AFM;
             selectedItem.Active = customerItem.Active;
-            //if (customerItem.AFM.Length != 9)
-            //{
-            //    throw new Exception($"AFM field can only take 9 characters.");
-            //}
+            
         }
 
         public List<Customer> GetAllCustomerItems()
@@ -48,7 +45,7 @@ namespace Session25Exercise.Services
 
         public Customer GetById(int id)
         {
-            return CustomerInnerList.FirstOrDefault(x => x.Id==id);
+            return CustomerInnerList.FirstOrDefault(x => x.Id == id);
         }
 
         public void RemoveItem(int id)
@@ -56,7 +53,7 @@ namespace Session25Exercise.Services
             var selectedItem = GetById(id);
             if (selectedItem==null)
             {
-                throw new Exception($"Item with id {id} was not found.");
+                throw new Exception($"Item with id = {id} was not found.");
             }
             CustomerInnerList.Remove(selectedItem);
         }
