@@ -2,50 +2,44 @@
 @model Session25Exercise.Pages.ListModel
 @{
 }
-
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/ListStyles.css">
+</head>
 <a href="/CustomerDetails/0">Add New customer</a>
-<ul id="lstList">
+
+
+@*<form method="get" action="/CustomerDetails/0" class="btn form-control">
+    <div class="col-3">
+        <button type="submit">Add New Customer</button>
+    </div>
+</form>*@
+
+
+    @*<a asp-page="CustomerDetails/0" method ="get" class="btn form-control">Add New Customer</a>*@
+    
+    
+
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>AFM</th>
+        <th>Active</th>
+    </tr>
+
+
     @foreach (var item in Model.CustomerItems)
     {
-        <li>Customer Name: @item.Name</li>
-        <li>Customer Surname: @item.Surname</li>
-        <li>Customer AFM: @item.AFM</li>
-        <li>Customer Activity: @item.Active</li>
-}
-</ul>
-
-<table>
-    <thead>
         <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                Surname
-            </th>
-            <th>
-                AFM
-            </th>
-            <th>
-                Active
-            </th>
-            <th></th>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.AFM</td>
+            <td>@item.Active</td>
+            <td><a href="CustomerDetails/@item.Id">Edit</a></td>
         </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.CustomerItems)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Surname</td>
-                <td>@item.AFM</td>
-                <td>@item.Active</td>
-                <td><a href="CustomerDetails/@item.Id">Edit</a></td>
-            </tr>
-}
-    </tbody>
+    }
 </table>
+ 

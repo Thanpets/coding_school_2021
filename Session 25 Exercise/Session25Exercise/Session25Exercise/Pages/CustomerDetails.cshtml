@@ -36,19 +36,23 @@
             <label asp-for="SelectedListItem.Active" class="col-sm-2 col-form-label">
             </label>
             <div class="col-sm-10">
-                <input asp-for="SelectedListItem.Active" class="form-control" placeholder="Name">
+                <input asp-for="SelectedListItem.Active" class="form-control" placeholder="False">
                 <span asp-validation-for="SelectedListItem.Active" class="text-danger"></span>
             </div>
         </div>
-
-        
-            
-                <div style="display: flex">
-                    <button class="btn btn-warning" asp-page-handler="cancel">Cancel</button>
-                    @if (Model.SelectedListItem.Id > 0)
-                    {
-                        <button class="btn btn-danger" asp-page-handler="delete">Delete</button>}
-                    <button class="btn btn-success" type="submit">Save</button>
-                </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Create/Edit" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="List" class="btn btn-success form-control">Cancel</a>
+            </div>
+            @if (Model.SelectedListItem.Id > 0)
+            {
+                <div class="col-3">
+                    <button asp-page-handler="delete" class="btn btn-danger form-control">Delete</button>
+                </div>}
+        </div>
+  
     </form>
 </div>
